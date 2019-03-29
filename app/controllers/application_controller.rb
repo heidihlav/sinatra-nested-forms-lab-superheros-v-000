@@ -13,7 +13,7 @@ class App < Sinatra::Base
       @hero_name = []
       @hero_power = []
       @hero_bio = []
-      
+
       params[:team][:members].each.with_index do |value, index|
         @hero_name << value[:name]
         @hero_power << value[:power]
