@@ -13,8 +13,6 @@ class App < Sinatra::Base
 
       params[:team][:members].each.with_index do |value, index|
         @hero_name = []
-        binding.pry
-
         @hero_power = []
         @hero_bio = []
 
