@@ -10,7 +10,6 @@ class App < Sinatra::Base
 
     post '/teams' do
       erb :team
-      # iterate through params - .each.with_index
       @hero_name = []
       @hero_power = []
       @hero_bio = []
