@@ -19,7 +19,7 @@ class App < Sinatra::Base
         @hero_name << value[:name]
         @hero_power << value[:power]
         @hero_bio << value[:bio]
-        # binding.pry
+        binding.pry
       end
 
     end
