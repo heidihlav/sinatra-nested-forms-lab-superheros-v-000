@@ -19,7 +19,6 @@ class App < Sinatra::Base
         @hero_bio << value[:bio]
       end
       erb :team
-
     end
 
 
