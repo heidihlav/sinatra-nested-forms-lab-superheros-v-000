@@ -9,7 +9,6 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      erb :team
       @hero_name = []
       @hero_power = []
       @hero_bio = []
@@ -19,6 +18,7 @@ class App < Sinatra::Base
         @hero_power << value[:power]
         @hero_bio << value[:bio]
       end
+      erb :team
 
     end
 
